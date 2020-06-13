@@ -1,0 +1,387 @@
+.student-details {
+    .nav-tabs {
+        margin-left: 30px;
+
+        @media (max-width: 991px) {
+            margin-top: 50px;
+        }
+
+        @media (max-width: 615px) {
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .nav-item {
+            @media (max-width: 615px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .nav-link {
+            background: #cad5f3;
+            color: $primary-color;
+            border: 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 8px 25px;
+            margin-right: 10px;
+            border-radius: 0px;
+
+            &.active {
+                background: $white;
+            }
+        }
+    }
+
+    .tab-content {
+        #studentExam {
+            div.dt-buttons {
+                bottom: 0;
+            }
+
+            table.dataTable {
+                box-shadow: none;
+                padding: 0;
+                padding-top: 20px;
+            }
+        }
+
+        #studentDocuments {
+            .table thead th {
+                border-bottom: 1px solid #dee2e6;
+            }
+        }
+    }
+
+    .single-meta {
+        border-bottom: 1px solid rgba(65, 80, 148, 0.15);
+        padding: 7px 0px;
+
+        &:last-of-type {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .single-info {
+        border-bottom: 1px solid rgba(65, 80, 148, 0.15);
+        padding: 14px 0px;
+
+        &:last-of-type {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.stu-sub-head {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(65, 80, 148, 0.3);
+}
+
+.student-meta-box {
+    position: relative;
+
+    .student-meta-top {
+        background: url(../img/student/student-details-bg.png) no-repeat center;
+        background-position: center;
+        background-size: cover;
+        min-height: 120px;
+        border-radius: 10px 10px 0px 0px;
+
+        &.siblings-meta-top {
+            background: url(../img/student/siblings-details-bg.png) no-repeat center;
+            background-size: cover;
+        }
+
+        &.staff-meta-top {
+            background: url(../img/staff/staff-details-bg.png) no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    .student-meta-img {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        border-radius: 6px;
+    }
+
+    .name {
+        color: $text-color;
+    }
+
+    .value {
+        color: $primary-color;
+        font-weight: 500;
+        text-align: right;
+    }
+}
+
+.student-admit-card {
+    position: relative;
+
+    .admit-header {
+        background: url(../img/student/admit-header-bg.png) no-repeat center;
+        background-position: center;
+        background-size: cover;
+        min-height: 120px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .admit-meta-img {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        border-radius: 6px;
+    }
+
+    th {}
+
+    td {}
+}
+
+// Student Activities
+.student-activities {
+    .sub-activity-box {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .single-activity {
+        &:last-child {
+            .sub-activity {
+                padding-bottom: 0px;
+
+                &:after {
+                    height: 75%;
+                }
+            }
+        }
+
+        .title,
+        .sub-activity {
+            position: relative;
+            margin-bottom: 0;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 13px;
+                height: 13px;
+                border-radius: 20px;
+                box-shadow: 0px 10px 15px rgba(108, 39, 255, 0.2);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: -27px;
+                top: 12px;
+                width: 1px;
+                height: 100%;
+                background: $text-color;
+            }
+        }
+
+        .title {
+            margin-left: 102px;
+            padding-bottom: 25px;
+            color: $primary-color;
+            font-size: 12px;
+
+            &:before {
+                @extend .gradient-bg;
+                left: -33px;
+            }
+        }
+
+        .subtitle {
+            color: $primary-color;
+            font-size: 12px;
+        }
+
+        .sub-activity {
+            min-width: 60%;
+            max-width: 60%;
+            margin-right: 50px;
+            margin-left: 26px;
+            margin-bottom: 0px;
+            padding-bottom: 30px;
+            @media (max-width: 1380px) {
+                min-width: 48%;
+                max-width: 48%;
+            }
+            @media (max-width: 1199px) {
+                min-width: 38%;
+                max-width: 38%;
+            }
+
+            &:before {
+                left: -33px;
+                background: $white;
+                border: 3px solid $primary-color2;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .time {
+            margin-bottom: 0;
+            color: $primary-color;
+            font-size: 12px;
+            min-width: 76px;
+        }
+    }
+
+    .close-activity {
+        // .primary-btn {
+        // 	border-radius: 40px;
+        // 	border: 1px solid $primary-color2;
+        // 	line-height: 30px;
+        // 	height: 30px;
+        // 	padding: 0 8px;
+        // 	background: transparent;
+        // 	span {
+        // 		color: $text-color;
+        // 		@include transition();
+        // 	}
+        // 	&:hover {
+        // 		@extend .gradient-bg;
+        // 		span {
+        // 			color: $white;
+        // 		}
+        // 	}
+        // }
+    }
+}
+
+.student-attendance {
+    table.dataTable thead {
+        th {
+            padding-left: 0;
+			padding-right: 6px;
+			vertical-align: text-top;
+        }
+
+        .sorting:before,
+        .sorting:after,
+        .sorting_asc:after,
+        .sorting_desc:after {
+            content: none;
+        }
+    }
+}
+
+table.dataTable thead {
+    .sorting {
+        vertical-align: text-top;
+    }
+}
+
+.single-report-admit {
+    position: relative;
+
+    .card {
+        border: 0px;
+    }
+
+    .card-header {
+        background: url(../img/report-admit-bg.png) no-repeat center;
+        background-size: cover;
+        border-radius: 5px 5px 0px 0px;
+        border: 0;
+        padding: 30px 30px;
+
+        .logo-img {
+            max-width: 130px;
+            height: auto;
+        }
+    }
+
+    .report-admit-img {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        border-radius: 6px;
+    }
+
+    .card-body {
+        @include gradient(90deg, #d8e6ff 0%, #ecd0f4 100%);
+    }
+
+    table {
+        tr {
+            th {
+                text-transform: uppercase;
+                font-size: 12px;
+                color: $primary-color;
+                border-bottom: 1px solid lighten($text-color, 10%);
+                padding: 5px 0px;
+            }
+        }
+
+        tr {
+            td {
+                border-bottom: 1px solid lighten($text-color, 20%);
+                padding: 8px 0px;
+            }
+
+            &:last-child {
+                td {
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+// Theme Radio Image
+.radio-img {
+    input[type=radio] {
+        opacity: 0;
+        display: none;
+    }
+
+    input[type="radio"]:checked+img {
+        border: 2px solid $primary-color2;
+    }
+
+    img {
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        @include transition();
+    }
+}
+
+
+// Student Certificate
+.student-certificate {
+    position: relative;
+
+    .signature {
+        font-size: 10px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .certificate-position {
+        position: absolute;
+        top: 49%;
+        left: 9%;
+        right: 9%;
+        bottom: 14%;
+    }
+}

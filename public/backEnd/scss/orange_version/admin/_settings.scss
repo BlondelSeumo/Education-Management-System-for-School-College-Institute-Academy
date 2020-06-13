@@ -1,0 +1,29 @@
+.base-setup {
+	.card {
+		.card-body {
+			padding: 0px 15px;
+		}
+		.card-header {
+			background: rgba($primary-color, .85);
+			a,
+			.primary-btn {
+				color: $white;
+			}
+			.tr-bg {
+				border: 1px solid $white;
+			}
+			.icon-only {
+				&:before {
+					content: "\e62a";
+					font-family: 'themify';
+				}
+				&.collapsed {
+					&:before {
+						content: "\e627";
+						font-family: 'themify';
+					}
+				}
+			}
+		}
+	}
+}

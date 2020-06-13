@@ -1,0 +1,74 @@
+/**************** extend css start ****************/
+// %custom_btn_bg_1{
+//     background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);  
+// }
+
+  
+%custom_btn_bg_1 {
+    background-image: -webkit-gradient(linear, right top, left top, from(#7c32ff), color-stop(50%, #c738d8), to(#7c32ff));
+    background-image: -webkit-linear-gradient(right, #7c32ff 0%, #c738d8 50%, #7c32ff 100%);
+    background-image: -o-linear-gradient(right, #7c32ff 0%, #c738d8 50%, #7c32ff 100%);
+    background-image: linear-gradient(to left, #7c32ff 0%, #c738d8 50%, #7c32ff 100%);
+}
+%custom_hover {
+    background-image: -moz-linear-gradient( 0deg, rgb(124,50,255) 0%, rgb(162,53,236) 70%, rgb(199,56,216) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(124,50,255) 0%, rgb(162,53,236) 70%, rgb(199,56,216) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(124,50,255) 0%, rgb(162,53,236) 70%, rgb(199,56,216) 100%);
+    box-shadow: 0px 30px 30px 0px rgba(108, 39, 255, 0.5);
+}
+
+%custom_btn_bg_2 {
+    background-image: -moz-linear-gradient(to left, #c738d8 0%, #7c32ff 100%, #c738d8 0%);
+    background-image: -webkit-linear-gradient(0deg, #c738d8 0%, #7c32ff 100%);
+    background-image: -ms-linear-gradient(0deg, #c738d8 0%, #7c32ff 100%);
+}
+
+%custom_btn_bg_3 {
+    background-image: -webkit-linear-gradient(0deg, #7c32ff 0%, #c738d8 100%);
+    background-image: -ms-linear-gradient(0deg, #7c32ff 0%, #c738d8 100%);
+
+}
+
+%rank_bg {
+    background: -moz-linear-gradient(16deg, rgb(250, 113, 205) 0%, rgb(181, 77, 243) 100%);
+    background: -webkit-linear-gradient(16deg, rgb(250, 113, 205) 0%, rgb(181, 77, 243) 100%);
+    background: -ms-linear-gradient(16deg, rgb(250, 113, 205) 0%, rgb(181, 77, 243) 100%);
+    box-shadow: 0px 10px 20px 0px rgba(196, 113, 245, 0.3);
+}
+
+%overlay_bg {
+    background: -moz-linear-gradient(16deg, rgb(250, 113, 205) 0%, rgb(181, 77, 243) 100%);
+    background: -webkit-linear-gradient(16deg, rgb(250, 113, 205) 0%, rgb(181, 77, 243) 100%);
+    background: -ms-linear-gradient(16deg, rgb(250, 113, 205) 0%, rgb(181, 77, 243) 100%);
+}
+
+%pricing_btn_bg_bg {
+    background: -moz-linear-gradient(90deg, rgb(173, 35, 254) 0%, rgb(250, 96, 199) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(173, 35, 254) 0%, rgb(250, 96, 199) 100%);
+    background: -ms-linear-gradient(90deg, rgb(173, 35, 254) 0%, rgb(250, 96, 199) 100%);
+    box-shadow: 0px 8px 15px 0px rgba(180, 41, 248, 0.25);
+}
+
+%text_color {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( 0deg , #7c32ff 0%, #c738d8 100%);  
+}
+%white {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+    background-image: linear-gradient(to right, #fff 0%, #fff 100%);  
+}
+%text_2 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top, #b937e0 0%, #7c32ff 100%);  
+    
+} 
+%footer_btn {
+    background-image: linear-gradient(to top, rgb(185, 55, 224) 0%, rgb(124, 50, 255) 50%,  rgb(185, 55, 224) 100%,);
+    
+} 
+
+
+/**************** extend css start ****************/

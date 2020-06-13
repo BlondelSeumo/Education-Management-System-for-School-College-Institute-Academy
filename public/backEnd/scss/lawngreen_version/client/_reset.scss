@@ -1,0 +1,28 @@
+body.client {
+	font-size: 14px;
+	font-family: $primary-font;
+	font-weight: 400;
+	color: $text-color;
+	line-height: 26px;
+	&.dark {
+		background: url(../img/client/dark-body-bg.jpg) no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+	}
+	&.light {
+		background: $white;
+	}
+	&.color {
+		background: url(../img/client/color-body-bg.jpg) no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+	}
+}
+
+.container {
+	&.box-1420 {
+		@media (min-width: 1200px) {
+			max-width: 1420px;
+		}
+	}
+}

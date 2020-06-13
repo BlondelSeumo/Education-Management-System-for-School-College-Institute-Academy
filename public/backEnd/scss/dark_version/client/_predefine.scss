@@ -1,0 +1,37 @@
+.client {
+	.title {
+		color: $white;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+	.section-gap {
+		padding: 100px 0px;
+	}
+	.section-gap-top {
+		padding-top: 100px;
+	}
+	.section-gap-bottom {
+		padding-bottom: 100px;
+	}
+	.client-btn {
+		color: $white;
+		font-size: 12px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include transition();
+		&:hover {
+			color: $primary-color;
+		}
+	}
+	&.light,
+	&.color {
+		.title,
+		.client-btn,
+		.footer_area .f_widget .f_title h4 {
+			color: $primary-color;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+/* Start Footer Area css
+============================================================================================ */
+.client {
+	.footer_area {
+		.f_widget {
+			.f_title {
+				margin-bottom: 40px;
+				@media (max-width: 991px) {
+					margin-bottom: 20px;
+				}
+				h4 {
+					color: $white;
+					font-size: 18px;
+					font-weight: 600;
+					margin-bottom: 0px;
+				}
+			}
+			ul {
+				list-style: none;
+				padding-left: 0;
+				margin-bottom: 50px;
+				li {
+					display: block;
+					margin-bottom: 10px;
+					cursor: pointer;
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+
+	.single-footer-widget {
+		padding: 30px 0;
+		border-top: 1px solid rgba($white, 0.1);
+		.copy_right_text {
+			p {
+				margin: 0;
+				color: $white;
+				margin-left: -15px;
+				@include transition();
+				@media (max-width: 767px) {
+					text-align: center;
+					padding: 0px 15px;
+				}
+				a {
+					color: $primary-color;
+				}
+			}
+		}
+		.social_widget {
+			text-align: right;
+			position: relative;
+			margin-right: -15px;
+			@media (max-width: 767px) {
+				text-align: center;
+				margin-top: 20px;
+			}
+			a {
+				color: $white;
+				margin-left: 10px;
+				display: inline-block;
+				text-align: center;
+				@include transition();
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+	&.light,
+	&.color {
+		.single-footer-widget .copy_right_text p,
+		.single-footer-widget .social_widget a {
+			color: $primary-color;
+		}
+		.single-footer-widget .social_widget a {
+			&:hover {
+				color: $primary-color2;
+			}
+		}
+		.single-footer-widget {
+			border-top: 1px solid rgba($primary-color, 0.1);
+		}
+	}
+	&.color {
+		.single-footer-widget .copy_right_text p a {
+			color: $primary-color2;
+		}
+	}
+}
+/* End Footer Area css
+============================================================================================ */

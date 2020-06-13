@@ -1,0 +1,121 @@
+/************* footer section start******************/
+.footer_section {
+    background-image: url(../img/footer_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: -40px;
+    @media #{$tab}{
+
+    }
+    @media #{$medium_device}{
+    
+    }
+    .footer_area_text {
+
+        padding: 170px 0 101px;
+        @media #{$tab}{
+            padding: 90px 0 40px;
+        }
+        @media #{$medium_device}{
+            padding: 120px 0 50px;
+        }
+        img {
+            margin-bottom: 34px;
+        }
+
+        p {
+            padding: 0 66px;
+            @media #{$tab}{
+                padding: 0;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        @media #{$small_mobile}{
+            h2{
+                font-size: 25px;
+            }
+        }
+        @media #{$large_mobile}{
+        
+        }
+        @media #{$tab_device}{
+            h2{
+                font-size: 25px;
+            }
+        }
+        @media #{$medium_device}{
+            h2{
+                font-size: 25px;
+            }
+        }
+        .footer_btn {
+            text-align: left;
+            
+            box-shadow: 0px 20px 25px 0px rgba(130, 50, 252, 0.3);
+            display: inline-block;
+            border-radius: 50px;
+            padding: 18px 67px 18px 91px;
+            position: relative;
+            margin-top: 44px;
+            @include transform_time(0.8s);
+            @extend %footer_btn;
+            background-size: auto 200%;
+            @media #{$tab}{
+                padding: 18px 30px 18px 80px;
+            }
+            @media #{$medium_device}{
+               
+            }
+            &:hover{
+                background-position: bottom center;
+                box-shadow: 0px 20px 20px 0px rgba(108, 39, 255, 0.3);
+            }
+            i {
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 20px;
+                background-color: rgba(0, 0, 0, 0.3);
+                display: inline-block;
+                border-radius: 50%;
+                color: #fff;
+                position: absolute;
+                left: 10px;
+                top: 11px;
+                margin-bottom: 0px;
+            }
+
+            p {
+                padding: 0;
+                font-size: 11px;
+                color: #d29dff;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                color: $white_color;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .copyright_text{
+        padding: 20px 0px;
+        img{
+            width: 20px;
+            margin-right: 3px;
+        }
+        p{
+            color: #828bb2;
+        }
+        a{
+            color: #415094;
+            font-size: 15px;
+        }
+    }
+}

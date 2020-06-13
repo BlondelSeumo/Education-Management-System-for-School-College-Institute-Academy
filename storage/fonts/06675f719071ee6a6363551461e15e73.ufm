@@ -1,0 +1,52 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+Copyright 
+FontName Flaticon
+FontSubfamily Regular
+UniqueID FontForge 2.0 : Flaticon : 29-5-2019
+FullName Flaticon
+Version Version 001.000 
+PostScriptName Flaticon
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 49
+UnderlinePosition -125
+FontHeightOffset 90
+Ascender 889
+Descender -141
+FontBBox -8 -141 1010 889
+StartCharMetrics 32
+U 32 ; WX 391 ; N space ; G 3
+U 61696 ; WX 1000 ; N 001-speedometer ; G 4
+U 61697 ; WX 1000 ; N 002-analytics ; G 5
+U 61698 ; WX 1000 ; N 003-reading ; G 6
+U 61699 ; WX 1000 ; N 004-professor ; G 7
+U 61700 ; WX 1000 ; N 005-wallet ; G 8
+U 61701 ; WX 1000 ; N 006-accounting ; G 9
+U 61702 ; WX 1000 ; N 007-consultation ; G 10
+U 61703 ; WX 1000 ; N 008-test ; G 11
+U 61704 ; WX 1000 ; N 009-graduated-student ; G 12
+U 61705 ; WX 1000 ; N 010-book ; G 13
+U 61706 ; WX 1000 ; N 011-email ; G 14
+U 61707 ; WX 1000 ; N 012-reading-1 ; G 15
+U 61708 ; WX 1000 ; N 013-inventory ; G 16
+U 61709 ; WX 1000 ; N 014-bus ; G 17
+U 61710 ; WX 1000 ; N 015-hotel ; G 18
+U 61711 ; WX 1000 ; N 016-software ; G 19
+U 61712 ; WX 1000 ; N 017-analysis ; G 20
+U 61713 ; WX 1000 ; N 018-settings ; G 21
+U 61714 ; WX 1000 ; N 019-resume ; G 22
+U 61715 ; WX 1000 ; N 020-calendar ; G 23
+U 61716 ; WX 1000 ; N 021-calendar-1 ; G 24
+U 61717 ; WX 1000 ; N 022-test-1 ; G 25
+U 61718 ; WX 1000 ; N 023-book-1 ; G 26
+U 61719 ; WX 1000 ; N 024-slumber ; G 27
+U 61720 ; WX 1000 ; N 025-notification ; G 28
+U 61721 ; WX 1000 ; N 026-data-storage ; G 29
+U 61722 ; WX 1000 ; N 027-authentication ; G 30
+U 61723 ; WX 1000 ; N 028-poster ; G 31
+EndCharMetrics
+EndFontMetrics

@@ -1,0 +1,103 @@
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	min-width: 15%;
+	max-width: 15%;
+	background: transparent;
+	color: #fff;
+	margin-left: 0px;
+	background-color: $white;
+	@include transition();
+	@media (max-width: 1370px) {
+        min-width: 20%;
+		max-width: 20%;
+    }
+	@media (max-width: 991px) {
+		min-width: 50%;
+		max-width: 50%;
+		margin-left: -50%;
+		z-index: 999;
+		background: $white;
+		box-shadow: 4px 0px 8px rgba(221, 221, 221, 0.4);
+	}
+	&.active {
+		@media (max-width: 991px) {
+			margin-left: 0px;
+			z-index: 999;
+			background: $white;
+			box-shadow: 4px 0px 8px rgba(221, 221, 221, 0.4);
+		}
+	}
+	.sidebar-header {
+		padding: 26px;
+		img {
+			cursor: pointer;
+			max-width: 150px;
+			height: auto;
+		}
+	}
+	ul {
+		&.components {
+			padding: 0px;
+		}
+		li {
+			a {
+				padding: 9px 20px;
+				font-size: 12px;
+				font-weight: 500;
+				text-transform: uppercase;
+				display: block;
+				color: $primary-color;
+				border-left: 6px solid transparent;
+				@media (max-width: 1300px) and (min-width: 992px) {
+					padding: 8px 12px;
+				}
+				span {
+					margin-right: 15px;
+				}
+				&:hover,
+				&.active {
+					background-color: $sidebar_bg;
+					color: $primary-color;
+					border-left: 6px solid $primary-color2;
+					border-image-source: linear-gradient($primary-color3, $primary-color2);
+					border-image-slice: 6;
+				}
+			}
+			ul {
+				background: $sidebar_bg;
+				opacity: .7;
+				li {
+					a {
+						font-size: 11px;
+						padding-left: 55px;
+						background: $sidebar_bg;
+						color: $primary-color;
+						@media (max-width: 1300px) and (min-width: 992px) {
+							font-size: 10px;
+						}
+						&.active {
+							color: $primary-color;
+							border-left: 6px solid $primary-color2;
+							border-image-source: linear-gradient($primary-color3, $primary-color2);
+							border-image-slice: 6;
+						}
+					}
+				}
+			}
+		}
+	}
+	a[data-toggle="collapse"] {
+		position: relative;
+	}
+	.dropdown-toggle::after {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+	}
+}

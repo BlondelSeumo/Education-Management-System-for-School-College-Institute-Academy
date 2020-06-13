@@ -1,0 +1,628 @@
+/* Main Content Area css
+============================================================================================ */
+
+.main-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: $text-color; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: $text-color; 
+      }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.common-box-shadow {
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+}
+
+.bb-15 {
+    border-bottom: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+}
+
+.white-text {
+    color: $white;
+}
+
+.img-100 {
+    max-width: 100px;
+    max-height: 115px;
+    height: auto;
+    border-radius: 6px;
+}
+.img-180 {
+    max-width: 180px;
+    max-height: 180px;
+    height: auto;
+}
+
+#main-content {
+    width: 100%;
+    padding: 30px;
+    margin-left: 15%;
+    min-height: 100vh;
+    @include transition();
+    @media (max-width: 1370px) {
+        margin-left: 20%;
+        padding: 30px 15px;
+    }
+    @media (max-width: 991px) {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    @media (max-width: 575px) {
+        padding: 15px;
+    }
+}
+
+/* Main Content Area css
+============================================================================================ */
+
+/* Main Title Area css
+============================================================================================ */
+
+.main-title {
+    h3 {
+        color: $primary-color;
+        line-height: 1;
+    }
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.gradient-bg {
+    @include gradient(90deg, $primary-color2 0%, $primary-color3 100%);
+}
+
+.border-gradient {
+    @include border-gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-bg2 {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-color {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-color2 {
+    @include gradient(90deg, $primary-color2 0%, $primary-color3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End Gradient Area css
+============================================================================================ */
+.btn-success {
+    font-size: 12px;
+}
+.primary-btn {
+    display: inline-block;
+    color: $primary-color;
+    letter-spacing: 1px;
+    font-family: $primary-font;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0px 20px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    @include transition();
+    &.form-control {
+        background: transparent;
+    }
+    label {
+        margin-bottom: 0px;
+    }
+    .common-checkbox:checked + label:before {
+        color: #ffffff;
+        top: -13px;
+    }
+    .common-checkbox + label:before {
+        border: 1px solid #ffffff;
+        top: -13px;
+    }
+    span {
+        font-weight: 600;
+        &.pl {
+            padding-left: 8px;
+        }
+        &.pr {
+            padding-right: 8px;
+        }
+    }
+    &:hover {
+        @extend .common-box-shadow;
+    }
+    &.small {
+        letter-spacing: 1px;
+        line-height: 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    &.medium {
+        line-height: 38px !important;
+    }
+    &.semi-large {
+        line-height: 48px !important;
+    }
+    &.large {
+        letter-spacing: 1px;
+        line-height: 60px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 24px;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    &.fix-gr-bg {
+        background: -webkit-linear-gradient(90deg, $primary-color2 0%, $primary-color3 51%, $primary-color2 100%);
+        background: -moz-linear-gradient(90deg, $primary-color2 0%, $primary-color3 51%, $primary-color2 100%);
+        background: -o-linear-gradient(90deg, $primary-color2 0%, $primary-color3 51%, $primary-color2 100%);
+        background: -ms-linear-gradient(90deg, $primary-color2 0%, $primary-color3 51%, $primary-color2 100%);
+        background: linear-gradient(90deg, $primary-color2 0%, $primary-color3 51%, $primary-color2 100%);
+        color: $white;
+        background-size: 200% auto;
+        @include transition();
+        &:hover {
+            background-position: right center;
+            @extend .common-box-shadow;
+            color: $white;
+        }
+    }
+    &.white {
+        background: $white;
+        &:hover {
+            @extend .gradient-bg;
+            color: $white;
+        }
+    }
+    &.tr-bg {
+        background: transparent;
+        border: 1px solid $primary-color3;
+        line-height: 28px;
+    }
+    &.bord-rad {
+        border-radius: 30px;
+    }
+    &.icon-only {
+        padding: 0 9px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50px;
+    }
+}
+
+/* Start Primary Input Area css
+============================================================================================ */
+
+.input-right-icon {
+    button {
+        background: transparent;
+        border: 0;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: -38px;
+        position: relative;
+        z-index: 999;
+        &.primary-btn-small-input {
+            margin-left: -95px;
+            padding: 0; // @media (max-width: 1390px) {
+            // 	margin-left: -70px;
+            // }
+        }
+        i {
+            position: relative;
+            top: 12px;
+        }
+    }
+}
+
+.input-effect {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.primary-input {
+    color: $primary-color;
+    font-size: 13px;
+    width: 100%;
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(130, 139, 178, 0.30);
+    background-color: transparent;
+    padding-bottom: 8px;
+    position: relative;
+    border-radius: 0px;
+    z-index: 99;
+    ~.focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $primary-color2;
+        @include transition(all 0.4s ease-in-out);
+    }
+    ~label {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        top: 13px;
+        color: $text-color;
+        z-index: 1;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @include transition();
+    }
+    @include placeholder {
+        color: $text-color;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &:focus {
+        color: $primary-color !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        border-color: transparent !important;
+    }
+    &.form-control[readonly] {
+        background: transparent;
+    }
+    &.form-control.is-invalid {
+        border-color: transparent;
+        border-bottom: 1px solid rgba(130, 139, 178, 0.3);
+    } // &.input-left-icon {
+    // 	&:focus {
+    // 		@include placeholder {
+    // 			left: 18px;
+    // 			bottom: 10px;
+    // 		}
+    // 	}
+    // }
+}
+textarea.primary-input {
+    padding: 10px 0px 0px 0;
+}
+.form-control:focus {
+    border-color: rgba(130, 139, 178, 0.3)!important;
+    box-shadow: none!important;
+}
+
+.primary-input:focus~.focus-border,
+.has-content.primary-input~.focus-border {
+    width: 100%;
+    @include transition(all 0.4s ease-in-out);
+}
+
+.primary-input:focus~label,
+.primary-input.read-only-input~label,
+.has-content.primary-input~label {
+    top: -14px;
+    font-size: 11px;
+    color: rgba($text-color, .8);
+    text-transform: capitalize;
+    @include transition();
+}
+
+/* End Primary Input Area css
+============================================================================================ */
+
+/* Start Primary Checkbox Area css
+============================================================================================ */
+
+.common-checkbox+label {
+    display: block;
+    cursor: pointer;
+}
+
+.common-checkbox {
+    display: none;
+}
+
+.common-checkbox+label:before {
+    content: "";
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    width: 14px;
+    height: 14px;
+    line-height: 15px;
+    padding-left: 0px;
+    margin-right: 14px;
+    vertical-align: bottom;
+    color: transparent;
+    position: relative;
+    top: -6px;
+    @include transition();
+}
+
+.common-checkbox+label:active:before {
+    transform: scale(0);
+}
+
+.common-checkbox:checked+label:before {
+    content: "\e64d";
+    border: 0px;
+    font-family: 'themify';
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    width: 14px;
+    height: 14px;
+    line-height: 15px;
+    padding-left: 0px;
+    margin-right: 14px;
+    vertical-align: bottom;
+    color: $primary-color;
+    position: relative;
+    top: -6px;
+    @include transition();
+}
+
+.common-checkbox:disabled+label:before {
+    transform: scale(1);
+    border-color: $text-color;
+}
+
+.common-checkbox:checked:disabled+label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+}
+
+/* End Primary Checkbox Area css
+============================================================================================ */
+
+.niceSelect {
+    border: 0px;
+    border-bottom: 1px solid rgba(130, 139, 178, 0.3);
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: $text-color;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0;
+    background: transparent;
+}
+
+.nice-select {
+    border: 0;
+    border-radius: 0px;
+    padding-left: 0;
+    padding-right: 30px;
+    &:after {
+        content: "\e62a";
+        font-family: 'themify';
+        border: 0;
+        transform: rotate(0deg);
+        margin-top: -16px;
+        font-size: 12px;
+        font-weight: 500;
+        right: 18px;
+        transform-origin: none;
+        @include transition(all 0.1s ease-in-out);
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &.open {
+        &:after {
+            @include transform(rotate(180deg));
+            margin-top: 15px;
+        }
+    }
+    .current {
+        @include transition();
+    }
+    .list {
+        width: 100%;
+        left: auto;
+        right: 0;
+        @extend .common-box-shadow;
+        border-radius: 0px 0px 10px 10px;
+        margin-top: 1px;
+        z-index: 9999 !important;
+        li {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            &:first-child {
+                color: $primary-color2;
+                &:hover {
+                    color: $primary-color2;
+                }
+            }
+            &:last-child {
+                margin-bottom: 20px;
+            }
+            &:first-child {
+                color: $primary-color2;
+                &:hover {
+                    color: $primary-color2;
+                }
+            }
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    &.tr-bg {
+        background: transparent;
+        border: 1px solid $primary-color2;
+        border-radius: 31px;
+        height: 30px;
+        line-height: 28px;
+        @include transition();
+        padding: 0 36px 0px 30px;
+        &:after {
+            color: $primary-color;
+            margin-top: -14px;
+        }
+        &.open {
+            &:after {
+                margin-top: 6px;
+            }
+        }
+        .current {
+            color: $primary-color;
+        }
+        .list {
+            min-width: 180px;
+        }
+        &:hover {
+            border: 1px solid transparent;
+            @extend .gradient-bg;
+            &:after {
+                color: $white;
+            }
+            .current {
+                color: $white;
+            }
+        }
+    }
+    &.bb {
+        background: transparent;
+        border-bottom: 1px solid rgba(130, 139, 178, 0.3);
+        @include transition();
+        height: 37px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 0px;
+            height: 2px;
+            background: $primary-color2;
+            @include transition();
+        }
+        .current {
+            color: $text-color;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            position: relative;
+            bottom: -4px;
+        }
+        &.open {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.sms-accordion {
+    .card {
+        margin-bottom: 8px;
+        @extend .common-box-shadow;
+    }
+    .card-header {
+        border-bottom: 0px;
+        .card-link {
+            color: $primary-color;
+            font-weight: 500;
+            font-size: 15p;
+        }
+        .primary-btn {
+            color: $primary-color;
+        }
+    }
+}
+
+.v-h-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+// Select 2
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container-multi {
+    .select2-choices {
+        min-height: 38px;
+        border: 1px solid rgba(130, 139, 178, 0.3);
+        box-shadow: none;
+        background-image: none;
+        .select2-search-choice {
+            background: #cad5f3;
+            color: $primary-color;
+            border: 0px;
+            box-shadow: none;
+			padding: 8px 18px;
+            >div {
+                margin-left: 15px;
+            }
+            .select2-search-choice-close {
+				left: 6px;
+				height: 16px;
+				min-width: 17px;
+				top: 7px;
+				background-size: 80px;
+				&:hover {
+					background-position: right 0px;
+				}
+            }
+        }
+    }
+}
+.select2-results .select2-highlighted {
+	background: rgba(130, 139, 178, 0.3);
+	color: $primary-color;
+}

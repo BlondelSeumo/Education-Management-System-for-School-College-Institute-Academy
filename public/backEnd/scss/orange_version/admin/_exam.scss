@@ -1,0 +1,21 @@
+.exam-cus-btns {
+	margin-top: -150px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: $primary-color2;
+}
+.dataTables_filter > label:before {
+    background: $primary-color2;
+}
+button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled) {
+	background-color: $primary-color2;
+}
+div.dt-buttons {
+    border: 1px solid $primary-color2;
+}
+button.dt-button, div.dt-button, a.dt-button {
+    border-left: 1px solid $primary-color2;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: $primary-color2;
+}

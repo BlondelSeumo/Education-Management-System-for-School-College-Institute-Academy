@@ -1,0 +1,357 @@
+/* Start Header Area css
+============================================================================================ */
+
+.admin {
+    .navbar {
+        padding: 0px;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+        @media (max-width: 991px) {
+            position: absolute;
+            top: 20px;
+            width: 92%;
+            z-index: 10000;
+        }
+        .container-fluid {
+            padding: 0;
+        }
+        .navbar-collapse {
+            @media (max-width: 991px) {
+                margin-top: 10px;
+                padding: 30px;
+                background-color: $primary-color;
+            }
+        }
+        .nav-buttons {
+            .nav-item {
+                .primary-btn {
+                    @media (max-width: 1150px) and (min-width: 992px) {
+                        padding: 0px 8px;
+                        font-size: 10px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+        .nav-setting {
+            .nice-select {
+                background: transparent;
+                border-bottom: 0;
+                padding-left: 12px;
+                border-right: 1px solid rgba(130, 139, 178, 0.3);
+                @media (max-width: 1150px) and (min-width: 992px) {
+                    padding-left: 5px;
+                    padding-right: 25px;
+                }
+                &:after {
+                    margin-top: -22px;
+                }
+                &.open {
+                    &:after {
+                        margin-top: 12px;
+                        right: 12px;
+                    }
+                }
+                .current {
+                    color: $primary-color;
+                    @include transition();
+                    &:hover {
+                        color: $primary-color2;
+                    }
+                }
+            }
+            .nav-item {
+                &:last-child {
+                    .nice-select {
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
+        .right-navbar {
+            -ms-flex-align: center;
+            align-items: center;
+            @media (max-width: 991px) {
+                -ms-flex-align: start;
+                align-items: start;
+            }
+            .notification-area {
+                .dropdown {
+                    .dropdown-toggle {
+                        margin-left: -6px;
+                    }
+                }
+                .badge {
+                    position: relative;
+                    left: 30px;
+                    top: -12px;
+                    padding: 4px 3px !important;
+                    max-width: 18px;
+                    max-height: 18px;
+                    box-shadow: none;
+                }
+            }
+            .dropdown:hover>.dropdown-menu {
+                max-height: 200px;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+            .dropdown>.dropdown-toggle:active {
+                pointer-events: none;
+            }
+            .dropdown {
+                .dropdown-toggle {
+                    margin-left: 12px;
+                    padding-left: 0px;
+                    @media (max-width: 1150px) and (min-width: 992px) {
+                        margin-left: 2px;
+                    }
+                    img {
+                        max-width: 40px;
+                        height: auto;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                    line-height: 12px;
+                    color: $text-color;
+                }
+                span {
+                    &:before {
+                        color: $primary-color;
+                        @include transition(all 0.4s ease-in-out);
+                    }
+                    &:hover {
+                        &:before {
+                            color: $primary-color2;
+                        }
+                    }
+                }
+                .flaticon-bell {
+                    &:before {
+                        font-size: 23px;
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+                .dropdown-menu {
+                    top: 30px;
+                    right: 0;
+                    left: auto;
+                    border: 0;
+                    padding: 0;
+                    margin: 0;
+                    min-width: 290px;
+                    max-width: 290px;
+                    border-radius: 8px 8px 0px 0px;
+                    opacity: 0;
+                    visibility: hidden;
+                    max-height: 0;
+                    display: block;
+                    transform: translateY(50px);
+                    @include transition();
+                    &.profile-box {
+                        min-width: 220px;
+                        max-width: 440px;
+                        .white-box {
+                            padding: 20px;
+                            border-radius: 8px;
+                        }
+                        .name, .message {
+                            max-width: 440px;
+                        }
+                    }
+                }
+                .dropdown-item {
+                    padding: 0px 20px;
+                }
+                .single-message {
+                    border-bottom: 1px solid rgba(65, 80, 148, 0.1);
+                    padding: 15px 0px;
+                    .message-avatar {
+                        position: relative;
+                    }
+                    .active-icon {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        height: 7px;
+                        width: 7px;
+                        background-color: $primary-color3;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+                    &:hover {
+                        .name {
+                            color: $primary-color2;
+                        }
+                    }
+                }
+                .single-notifi {
+                    &:hover {
+                        .message {
+                            color: $primary-color2;
+                        }
+                        span {
+                            &:before {
+                                color: $primary-color2;
+                            }
+                        }
+                    }
+                }
+                .white-box {
+                    padding: 20px 0px 0px;
+                    border-radius: 8px 8px 0px 0px;
+                }
+                .notification {
+                    font-size: 12px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid rgba(65, 80, 148, 0.3);
+                    span {
+                        color: $primary-color;
+                    }
+                }
+                .name {
+                    font-size: 12px;
+                    color: $primary-color;
+                    margin-bottom: 6px;
+                    max-height: 15px;
+                    max-width: 127px;
+                    overflow: hidden;
+                    @include transition();
+                }
+                .message {
+                    font-size: 12px;
+                    max-width: 127px;
+                    max-height: 13px;
+                    overflow: hidden;
+                    @include transition();
+                }
+                .time {
+                    font-size: 12px;
+                }
+                .badge {
+                    @extend .gradient-bg;
+                    color: $white;
+                    border-radius: 20px;
+                    font-size: 10px;
+                    padding: 4px 7px;
+                    @extend .common-box-shadow;
+                }
+                .primary-btn {
+                    width: 100%;
+                    @extend .gradient-bg;
+                    border-radius: 0px 0px 8px 8px;
+                    color: $white;
+                }
+                .profile-box {
+                    ul {
+                        padding-top: 20px;
+                        border-top: 1px solid rgba(65, 80, 148, 0.1);
+                        margin-top: 20px;
+                        li {
+                            a {
+                                font-size: 12px;
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                color: $text-color;
+                                span {
+                                    margin-right: 10px;
+                                    color: $text-color;
+                                    @include transition();
+                                }
+                            }
+                            &:hover {
+                                a {
+                                    color: $primary-color2;
+                                }
+                                span {
+                                    color: $primary-color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .setting-area {
+            .dropdown {
+                .dropdown-item {
+                    padding: 0;
+                }
+            }
+        }
+        .dropdown {
+            button {
+                border: 0;
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+    }
+    #sidebarCollapse {
+        @media (max-width: 991px) {
+            background: $black;
+            color: $white;
+            position: relative;
+            z-index: 9999;
+            cursor: pointer;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+.search-bar {
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+    }
+    li {
+        min-width: 375px;
+        @media (max-width: 1499px) {
+            min-width: auto;
+        }
+    }
+    .ti-search {
+        position: absolute;
+        margin-left: 5px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        color: $primary-color;
+    }
+    input {
+        padding-left: 25px;
+        height: 38px;
+        padding-bottom: 19px;
+        color: $primary-color;
+        font-size: 14px;
+        &:focus {
+            border: 0;
+            box-shadow: none;
+            background: transparent;
+            @include placeholder {
+                bottom: 0px;
+                left: 16px;
+                opacity: 0;
+            }
+        }
+        @include placeholder {
+            color: $primary-color;
+            bottom: 0px;
+            left: 0;
+            @include transition();
+        }
+    }
+}
+
+/* End Header Area css
+============================================================================================ */

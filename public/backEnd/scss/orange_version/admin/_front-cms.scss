@@ -1,0 +1,59 @@
+.single-cms-box {
+	.cms-img {
+		border-radius: 5px;
+	}
+	.single-cms {
+		position: relative;
+		box-shadow: none;
+		@include transition();
+		.overlay {
+			background: transparent;
+			@include transition();
+		}
+	}
+	.icons {
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		opacity: 0;
+		@include transition();
+		i {
+			padding: 9px;
+			border-radius: 20px;
+			color: $white;
+			background: rgba(255, 255, 255, 0.2);
+			font-size: 12px;
+			cursor: pointer;
+			@include transition();
+			&:hover {
+				color: $text-color;
+				background: $white;
+			}
+		}
+	}
+	.btn {
+		background: transparent;
+		padding: 0;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	&:hover {
+		.single-cms {
+			@extend .common-box-shadow;
+			.overlay {
+				@extend .gradient-bg;
+				opacity: .9;
+			}
+		}
+		.icons {
+			top: 50%;
+			opacity: 1;
+		}
+		.btn {
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,107 @@
+/**************** service_part css start ****************/
+.feature_part {
+   @media #{$tab} {
+      padding: 70px 0 42px;
+   }
+   @media #{$medium_device} {
+      padding: 80px 0 52px;
+   }
+   .single_feature_text {
+      h2 {
+         font-size: 42px;
+         line-height: 1.222;
+         margin-bottom: 20px;
+
+         @media #{$small_mobile} {
+            margin-top: 0px;
+            font-size: 25px;
+            margin-bottom: 15px;
+         }
+
+         @media #{$large_mobile} {
+            margin-top: 0px;
+            font-size: 30px;
+            margin-bottom: 15px;
+         }
+
+         @media #{$tab_device} {
+            font-size: 30px;
+         }
+
+         @media #{$medium_device} {
+            margin-top: 0px;
+            font-size: 35px;
+         }
+      }
+
+      p {
+         line-height: 1.8;
+      }
+   }
+
+   .single_feature_part {
+      @include transform_time(.6s);
+      @media #{$tab} {
+         padding: 0px 0px 25px;
+      }
+
+      @media #{$medium_device} {
+         margin-bottom: 25px;
+      }
+      
+      
+      .single_feature_icon {
+         margin-bottom: 30px;
+         position: relative;
+         z-index: 1;
+         width: 90px;
+         height: 68px;
+         text-align: center;
+         @include background("../img/feature_icon_bg.png");
+         background-position: top;
+         background-size: contain;
+         display: inline-block;
+         @include transform_time(.6s);
+         line-height: 82px;
+         @media #{$small_mobile} {
+            margin-bottom: 25px;
+         }
+   
+         @media #{$large_mobile} {
+            margin-bottom: 35px;
+         }
+   
+         @media #{$tab_device} {
+            margin-bottom: 35px;
+         }
+   
+         @media #{$medium_device} {
+   
+         }
+         i{
+            color: $icon_color;
+            font-size: 30px;
+            @include transform_time(.6s);
+            @extend %text_color;
+         }
+      }
+      h4 {
+         font-weight: 600;
+         font-size: 21px;
+         margin-bottom: 37px;
+         @media #{$tab} {
+            margin-bottom: 15px;
+         }
+   
+         @media #{$medium_device} {
+            margin-bottom: 15px;
+         }
+      }
+
+      p {
+         line-height: 1.8;
+         font-size: 16px;
+         padding-right: 4px;
+      }
+   }
+}

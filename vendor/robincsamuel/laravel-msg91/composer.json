@@ -1,0 +1,24 @@
+{
+    "name": "robincsamuel/laravel-msg91",
+    "description": "Package for MSG91 sms API",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "keywords": ["laravel-msg91", "msg91 laravel", "msg91 laravel package", "laravel package", "laravel sms package", "sms api", "text api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin C Samuel",
+            "email": "hi@robinz.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "RobinCSamuel\\LaravelMsg91\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,747 @@
+/* Start Boxes Area css
+============================================================================================ */
+.white-box {
+    background: $white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+    @media (max-width: 1300px) and (min-width: 992px) {
+        padding: 30px 15px;
+    }
+    &.single-summery {
+        padding: 21px 30px;
+        position: relative;
+        @include transition();
+        &:before,
+        &:after {
+            content: "";
+            background: transparent;
+            min-height: 100px;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            @include transition();
+        }
+        .d-flex {
+            @media (max-width: 1440px) and (min-width: 992px) {
+                -ms-flex-direction: column !important;
+                flex-direction: column !important;
+            }
+        }
+        h3,
+        p,
+        h1 {
+            position: relative;
+            z-index: 99;
+            @include transition();
+        }
+        h1 {
+            @media (max-width: 1480px) and (min-width: 992px) {
+                margin-top: 6px;
+            }
+        }
+        p {
+            color: $text-color;
+        }
+        &:hover {
+            background-color: $primary-color2;
+            h3,
+            p,
+            h1 {
+                color: $white;
+                -webkit-text-fill-color: $white;
+            }
+        }
+    }
+    &.radius-t-y-0 {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+/* End Boxes Area css
+============================================================================================ */
+.table {
+    thead th {
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-top: 0px;
+        padding: 12px 12px 12px 0px;
+    }
+    tbody {
+        td {
+            padding: 20px 18px 20px 0px;
+        }
+    }
+}
+
+.no-search {
+    .dataTables_filter > label {
+        display: none;
+    }
+}
+.no-paginate {
+    .dataTables_wrapper .dataTables_paginate {
+        display: none;
+    }
+}
+.no-table-info {
+    .dataTables_wrapper .dataTables_info {
+        display: none;
+    }
+}
+.school-table {
+    .dropdown {
+        .dropdown-toggle {
+            background: transparent;
+            color: $primary-color;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid $primary-color2;
+            border-radius: 32px;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            overflow: hidden;
+            @include transition(all 0.15s ease-in-out);
+            &:focus {
+                box-shadow: none;
+            }
+            &:hover,
+            &:focus {
+                @extend .gradient-bg;
+                color: $white;
+                border: 1px solid transparent;
+                @extend .common-box-shadow;
+            }
+            &:after {
+                content: "\e62a";
+                font-family: "themify";
+                border: none;
+                border-top: 0px;
+                font-size: 10px;
+                position: relative;
+                top: 3px;
+                left: 0;
+                font-weight: 600;
+                @include transition(all 0.15s ease-in-out);
+            }
+        }
+        .dropdown-menu {
+            @extend .common-box-shadow;
+            border-radius: 5px 5px 10px 10px;
+            border: 0px;
+            padding: 15px 0px;
+            .dropdown-item {
+                color: $text-color;
+                text-align: right;
+                font-size: 12px;
+                padding: 4px 1.5rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                @include transition(all 0.15s ease-in-out);
+                &:hover {
+                    color: $primary-color;
+                }
+                &:active {
+                    background: transparent;
+                    color: $primary-color;
+                }
+            }
+        }
+        &.show {
+            .dropdown-toggle {
+                &:after {
+                    top: 16px;
+                    left: 8px;
+                    @include transform(rotate(180deg));
+                    @include transition(all 0.15s ease-in-out);
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-dialog {
+        &.large-modal {
+            min-width: 1050px;
+        }
+        &.full-width-modal {
+            min-width: 90%;
+        }
+    }
+}
+
+.modal-content {
+    border: 0;
+    .modal-header {
+        background-color: $primary-color2;
+        background-size: cover;
+        border-radius: 5px 5px 0px 0px;
+        border: 0;
+        padding: 33px 40px;
+        @media (max-width: 999px) {
+            padding: 20px 30px;
+        }
+        .modal-title {
+            font-size: 18px;
+            color: $white;
+        }
+        .close {
+            color: $white;
+            opacity: 1;
+            margin: 0;
+            padding: 0;
+            @include transition();
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .modal-body {
+        padding: 40px 50px;
+        @media (max-width: 999px) {
+            padding: 0 20px 43px 20px;
+        }
+    }
+    table.dataTable {
+        padding: 0px;
+    }
+    .dataTables_filter > label {
+        top: -60px;
+    }
+}
+
+.radio-label {
+    display: inline-block;
+    color: $primary-color;
+}
+.radio-btn-flex {
+    @media (max-width: 1280px) and (min-width: 992px) {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        .mr-30 {
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: 359px) {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        .mr-30 {
+            margin-bottom: 15px;
+        }
+    }
+}
+/* hide input */
+.common-radio:empty {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    max-height: 0;
+    display: block;
+    margin-top: -10px;
+}
+
+/* style label */
+.common-radio:empty ~ label {
+    position: relative;
+    float: left;
+    line-height: 16px;
+    text-indent: 28px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+// Start Time Picker Css Style
+.bootstrap-datetimepicker-widget table td {
+    width: 62px;
+    &.hour,
+    &.minute {
+        @include transition();
+        &:hover {
+            @extend .white-text;
+            @extend .gradient-bg;
+            @extend .common-box-shadow;
+        }
+    }
+    span {
+        &.glyphicon-chevron-up,
+        &.glyphicon-chevron-down {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            line-height: 28px;
+            &:after {
+                display: inline-block;
+                font-family: "themify";
+                font-size: 12px;
+                color: $primary-color;
+                border: 1px solid $primary-color2;
+                border-radius: 40px;
+                width: 30px;
+                background: transparent;
+                box-shadow: none;
+                @include transition();
+                &:hover {
+                    &:after {
+                        @extend .white-text;
+                        @extend .gradient-bg;
+                        @extend .common-box-shadow;
+                    }
+                }
+            }
+        }
+        &.glyphicon-chevron-up {
+            &:after {
+                content: "\e627";
+            }
+        }
+        &.glyphicon-chevron-down {
+            &:after {
+                content: "\e62a";
+            }
+        }
+        &.timepicker-hour,
+        &.timepicker-minute {
+            border: 1px solid $primary-color2;
+            background: transparent;
+            color: $primary-color;
+            border-radius: 10px;
+            height: 80px;
+            line-height: 80px;
+            width: 60px;
+            font-size: 13px;
+        }
+    }
+    &.separator {
+        display: none;
+    }
+    .btn.btn-primary {
+        color: $primary-color;
+        font-size: 13px;
+        font-weight: 600;
+        border: 1px solid $primary-color2;
+        padding: 29px 19px;
+        &:hover {
+            background: transparent;
+            color: $primary-color;
+        }
+    }
+}
+// End Time Picker Css Style
+
+// Start Dtae Picker Css Style
+.datepicker {
+    padding: 30px 25px;
+    &.dropdown-menu {
+        border: 0;
+        @extend .common-box-shadow;
+        td {
+            padding: 10px 12.5px;
+        }
+        th,
+        td {
+            color: $text-color;
+        }
+    }
+    .datepicker thead tr:first-child th,
+    .datepicker tfoot tr th {
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    table tr td {
+        border-radius: 20px;
+        &.active {
+            &.day {
+                @extend .white-text;
+                @extend .gradient-bg;
+                @extend .common-box-shadow;
+            }
+        }
+        &.day {
+            @include transition();
+            &:hover {
+                @extend .white-text;
+                @extend .gradient-bg;
+                @extend .common-box-shadow;
+                border-radius: 20px;
+            }
+        }
+    }
+    thead tr {
+        &:first-child th {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                width: 99%;
+                height: 100%;
+                border-radius: 50px;
+                border: 1px solid $primary-color2;
+            }
+            &:hover {
+                @extend .white-text;
+                @extend .gradient-bg;
+                @extend .common-box-shadow;
+            }
+        }
+    }
+}
+// End Date Picker Css Style
+
+.common-radio:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid $primary-color;
+    @include transition();
+}
+
+/* toggle on */
+.common-radio:checked ~ label:before {
+    content: "";
+    text-indent: 1px;
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    @include transform(rotate(65deg));
+    font-size: 12px;
+    font-weight: 600;
+    border-top-color: transparent;
+}
+.common-radio:checked ~ label:after {
+    content: "\e64c";
+    font-family: "themify";
+    position: absolute;
+    display: block;
+    top: -2px;
+    left: 3px;
+    text-indent: 1px;
+    color: $primary-color;
+    background-color: transparent;
+    border: 0px;
+    @include transform(rotate(8deg));
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown-menu.top {
+    display: block;
+}
+
+.ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    @include transform(scale(0));
+    position: absolute;
+    opacity: 1;
+}
+.rippleEffect {
+    @include animation(rippleDrop 0.6s linear);
+}
+
+@include keyframes(rippleDrop) {
+    100% {
+        @include transform(scale(5));
+        opacity: 0;
+    }
+}
+
+.invalid-feedback {
+    margin-top: -24px;
+    strong {
+        position: relative;
+        top: 22px;
+        font-weight: 500;
+    }
+    &.invalid-select {
+        strong {
+            top: 58px;
+        }
+    }
+}
+
+// BreadCumb
+.sms-breadcrumb {
+    &.white-box {
+        padding: 12px 30px;
+        @media (max-width: 1300px) and (min-width: 992px) {
+            padding: 12px 15px;
+        }
+    }
+    .row.justify-content-between {
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+        color: $primary-color;
+    }
+    .bc-pages {
+        a {
+            display: inline-block;
+            color: $text-color;
+            font-size: 13px;
+            position: relative;
+            margin-right: 28px;
+            @include transition();
+            &:after {
+                content: "|";
+                color: $text-color;
+                font-size: 13px;
+                position: absolute;
+                top: 0;
+                right: -16px;
+            }
+            &:last-child {
+                margin-right: 0px;
+                color: $primary-color;
+                &:after {
+                    content: none;
+                }
+            }
+            &:hover {
+                color: $primary-color2;
+            }
+        }
+    }
+}
+
+.main-wrapper {
+    .fstElement {
+        width: 90%;
+        .fstControls {
+            width: auto;
+        }
+        .fstChoiceItem {
+            padding: 4px 16px 4px 20px;
+            background: $text-color;
+            border: none;
+            font-size: 13px;
+            text-transform: capitalize;
+            margin: 1px 5px 5px 0px;
+        }
+    }
+    .fstResults {
+        max-height: 250px;
+        .fstResultItem {
+            font-size: 14px;
+            padding: 5px 10px;
+            background: $white;
+            border-top: 1px solid $text-color;
+            @include transition();
+            &:hover,
+            &.fstSelected {
+                color: $text-color;
+            }
+            &.fstSelected {
+                border-color: $text-color;
+            }
+        }
+    }
+}
+
+.custom-table {
+    th {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    th,
+    td {
+        border-bottom: 1px solid rgba(130, 139, 178, 0.3);
+        padding: 5px 0px;
+    }
+}
+
+// Pagination
+.pagination {
+    .page-link {
+        padding: 6px 0;
+        width: 30px;
+        text-align: center;
+        color: $text-color;
+        font-size: 12px;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 0px;
+        @include transition();
+        &:hover {
+            @extend .gradient-bg;
+            color: $white;
+            @extend .common-box-shadow;
+        }
+    }
+}
+
+.school-table-style {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+    tr {
+        &:first-child {
+            td {
+                border-top: 0px;
+            }
+        }
+        th {
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #415094;
+            font-weight: 600;
+            padding: 10px 18px 10px 0px;
+            border-bottom: 1px solid rgba(130, 139, 178, 0.3);
+        }
+        td {
+            padding: 20px 10px 20px 0px;
+            border-top: 1px solid rgba(130, 139, 178, 0.15);
+        }
+    }
+    tfoot {
+        tr {
+            td {
+                border-top: 1px solid rgba(130, 139, 178, 0.15) !important;
+            }
+        }
+    }
+}
+
+.single-to-do {
+    margin-bottom: 15px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    label {
+        display: block;
+    }
+}
+
+.common-calendar {
+    .fc .fc-button-group > * {
+        display: block;
+    }
+    .fc-basic-view .fc-body .fc-row {
+        height: 95px !important;
+    }
+    .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+        float: left;
+    }
+    .fc-month-view .fc-day.fc-widget-content.fc-today {
+        @extend .gradient-bg;
+        @extend .common-box-shadow;
+    }
+    .fc-day.fc-widget-content.fc-today {
+        background: $text-color;
+    }
+    .fc-day-top.fc-today .fc-day-number {
+        color: $white;
+    }
+    .fc-state-default.fc-corner-left,
+    .fc-button.fc-state-default {
+        color: $primary-color;
+        border: 1px solid $primary-color2;
+        background: transparent;
+        border-radius: 30px;
+        @include transition();
+        &:hover {
+            @extend .gradient-bg;
+            @extend .common-box-shadow;
+            color: $white;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+// Morris Js
+.morris-hover {
+    position: absolute;
+    z-index: 1000;
+}
+.morris-hover.morris-default-style {
+    border-radius: 10px;
+    padding: 6px;
+    color: $primary-color;
+    background: $white;
+    border: 1px solid $primary-color3;
+    font-family: $primary-font;
+    font-size: 12px;
+    text-align: center;
+}
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0;
+}
+
+
+/******* infix update header *******/
+.logoimage{
+    max-width: 150px !important;
+     height: auto;
+     padding: 2px;
+   }
+   .loginButton{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .singleLoginButton{
+       flex: 22% 0 0;
+   }
+   
+   .loginButton .get-login-access {
+       display: block;
+       width: 100%;
+       border: 1px solid #fff;
+       border-radius: 5px;
+       margin-bottom: 20px;
+       padding: 5px;
+   }
+   @media (max-width: 576px) {
+     .singleLoginButton{
+       flex: 49% 0 0;
+     }
+   }
+   @media (max-width: 576px) {
+     .singleLoginButton{
+       flex: 49% 0 0;
+     }
+   }
+   
+   .dialog-notice-title{
+       text-align: left !important;
+       color: white !important;
+       text-shadow: 0px 10px 10px black !important;
+   }
+   

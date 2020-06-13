@@ -1,0 +1,558 @@
+.client {
+	/* Start Home Banner Area css
+	============================================================================================ */
+	.home-banner-area {
+		min-height: 720px;
+		display: flex;
+		background: url(../../img/client/home-banner1.jpg) no-repeat center;
+		background-size: cover;
+		z-index: 1;
+		position: relative;
+		z-index: 1;
+			&:before {
+				content: "";
+				background: $primary-color2;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				height: 100%;
+				width: 100%;
+				@include transition ();
+				z-index: -1;
+				opacity: .7;
+			}
+		@media (max-width: 991px) {
+			margin-top: 120px;
+		}
+	}
+	.banner-area {
+		min-height: 450px;
+		display: flex;
+		background:  url(../../img/client/common-banner1.jpg) no-repeat center;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+			&:before {
+				content: "";
+				background: $primary-color2;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				height: 100%;
+				width: 100%;
+				@include transition();
+				z-index: -1;
+				opacity: .7;
+			}
+		@media (max-width: 991px) {
+			margin-top: 120px;
+		}
+		.banner-inner {
+			.banner-content {
+				h2 {
+					font-size: 60px;
+					max-width: 500px;
+					margin: 0px auto 10px;
+					line-height: 1.2;
+					@media (max-width: 767px) {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	.banner-inner {
+		width: 100%;
+		display: flex;
+		.container {
+			vertical-align: middle;
+			align-self: center;
+		}
+		.banner-content {
+			width: 100%;
+			color: $white;
+			vertical-align: middle;
+			align-self: center;
+			text-align: center;
+			h5 {
+				color: $white;
+				display: inline-block;
+				margin: 0 auto;
+				text-transform: uppercase;
+				border-top: 1px solid $white;
+				border-bottom: 1px solid $white;
+				padding: 6px 0px;
+				letter-spacing: 1.5px;
+			}
+			h2 {
+				color: $white;
+				font-size: 100px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			p {
+				color: $white;
+				max-width: 550px;
+				font-size: 14px;
+				margin: 0px auto 40px;
+			}
+		}
+	}
+	/* End Banner Area css
+	============================================================================================ */
+
+	/* Start News Area css
+	============================================================================================ */
+	.news-area {
+		margin-bottom: 60px;
+	}
+	.news-item {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 40px;
+		.news-img {
+			position: relative;
+			&:before {
+				content: "";
+				background: $primary-color2;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				height: 100%;
+				width: 100%;
+				@include transition();
+			}
+			img {
+				opacity: .75;
+			}
+			&:hover {
+				img {
+					opacity: .2;
+				}
+			}
+		}
+		.news-text {
+			position: absolute;
+			left: 10%;
+			bottom: 50px;
+			width: 90%;
+			h4 {
+				max-height: 72px;
+				overflow: hidden;
+				font-size: 16px;
+				color: $white;
+				padding-right: 20px;
+				margin-bottom: 0px;
+				@include transition();
+				a {
+					color: $white;
+					@include transition();
+					&:hover {
+						opacity: .8;
+					}
+				}
+			}
+			.date {
+				color: $white;
+				font-size: 12px;
+				text-transform: uppercase;
+				@include transition();
+			}
+		}
+	}
+	.news-details-area {
+		h1 {
+			color: $white;
+			font-size: 36px;
+		}
+		.meta {
+			.date {
+				font-size: 12px;
+				margin-right: 30px;
+				span {
+					color: $white;
+				}
+			}
+		}
+		h3 {
+			color: $white;
+		}
+		p {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		.notice-board {
+			max-height: none;
+		}
+	}
+	/* End News Area css
+	============================================================================================ */
+
+	/* Start Notice Board Area css
+	============================================================================================ */
+	.notice-board-area {
+		@media (max-width: 991px) {
+			margin-top: 50px;
+		}
+	}
+	.notice-board {
+		max-height: 340px;
+		overflow-y: auto;
+		@media (max-width: 1200px) and (min-width: 992px) {
+			max-height: 270px;
+		}
+	}
+	.notice-item {
+		padding-bottom: 18px;
+		margin-top: 18px;
+		border-bottom: 2px solid $primary-color;
+		&:first-child {
+			margin-top: 0px;
+		}
+		.date {
+			font-size: 12px;
+			text-transform: uppercase;
+			margin-bottom: 7px;
+		}
+		h4 {
+			color: $white;
+			font-size: 16px;
+			margin-bottom: 0px;
+		}
+	}
+	/* End Notice Board Area css
+	============================================================================================ */
+
+	/* Start Academic Area css
+	============================================================================================ */
+	.academics-area {
+		margin-bottom: 60px;
+	}
+	.academic-item {
+		margin-bottom: 40px;
+		.academic-text {
+			margin-top: 25px;
+			h4 {
+				max-height: 48px;
+				overflow: hidden;
+				margin-bottom: 12px;
+				a {
+					color: $white;
+					@include transition();
+					&:hover {
+						opacity: .6;
+					}
+				}
+			}
+			p {
+				max-height: 48px;
+				overflow: hidden;
+				margin-bottom: 18px;
+			}
+		}
+	}
+	/* End Academic Area css
+	============================================================================================ */
+
+	/* Start Events Area css
+	============================================================================================ */
+	.events-area {
+		margin-bottom: 60px;
+	}
+	.events-item {
+		margin-bottom: 40px;
+		.card {
+			background: transparent;
+			border-radius: 0px;
+			.card-img-top {
+				border-radius: 0px;
+			}
+			.card-body {
+				position: relative;
+				background: $white;
+				.date {
+					position: absolute;
+					top: -30px;
+					left: 20px;
+					background: $primary-color;
+					display: inline-block;
+					padding: 12px;
+					max-width: 60px;
+					text-align: center;
+					color: $white;
+					font-size: 12px;
+					text-transform: uppercase;
+					@include transition();
+				}
+			}
+			.card-title {
+				max-height: 72px;
+				overflow: hidden;
+				margin-top: 40px;
+				font-size: 16px;
+			}
+			.card-text {
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+		}
+		&:hover {
+			.card {
+				.card-body {
+					.date {
+						@extend .gradient-bg;
+					}
+				}
+			}
+		}
+	}
+	/* End Events Area css
+	============================================================================================ */
+
+	/* Start Testimonial Area css
+	============================================================================================ */
+	.testimonial-area {
+		background: url(../../img/client/testimonial-bg.jpg) no-repeat center center;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+			&:after{
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: $primary-color2;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				opacity: .5;
+			}
+
+		.owl-nav {
+			position: absolute;
+			left: 50%;
+			bottom: -15px;
+			@include transform (translate(-50%, -50%));
+			display: -ms-flexbox;
+			display: flex;
+			.owl-prev,
+			.owl-next {
+				img {
+					@include transition();
+					&:hover {
+						@include filter(brightness(50%));
+					}
+				}
+			}
+			.owl-prev {
+				margin-right: 30px;
+			}
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+
+	.single-testimonial {
+		position: relative;
+		z-index: 9;
+		padding-bottom: 85px;
+		.thumb {
+			margin-right: 20px;
+		}
+		h4 {
+			color: $white;
+			font-size: 18px;
+			margin-bottom: 5px;
+			@include transition();
+			&:hover {
+				color: $primary-color;
+				cursor: pointer;
+			}
+		}
+		.desc {
+			max-width: 810px;
+			font-style: italic;
+			font-size: 16px;
+			margin: 20px auto 0px;
+			color: #fff;
+		}
+	}
+	/* End Testimonial Area css
+	============================================================================================ */
+
+	/* Start Fact Area css
+	============================================================================================ */
+	.fact-area {
+		.white-box.single-summery {
+			box-shadow: none;
+		}
+	}
+	/* End Fact Area css
+	============================================================================================ */
+
+	/* Start Department Area css
+	============================================================================================ */
+	.department-area {
+		h3 {
+			color: $white;
+			margin-bottom: 10px;
+		}
+	}
+	/* End Department Area css
+	============================================================================================ */
+
+	/* Start About Us Area css
+	============================================================================================ */
+	.info-area {
+		.info-thumb {
+			overflow: hidden;
+			display: inline-block;
+		}
+
+		@media (max-width: 800px) {
+			.info-content {
+				text-align: center;
+				padding: 80px 30px 80px 0;
+			}
+		}
+
+		.info-content {
+			@media (max-width: 991px) {
+				margin-top: 30px;
+			}
+			position: relative;
+			background: rgba($primary-color, 0.3);
+			padding: 95px 80px;
+			top: -4px;
+			@media (max-width: 768px) {
+				padding: 30px;
+			}
+			h2 {
+				color: $white;
+				margin-bottom: 20px;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.info-left {
+			z-index: 2;
+			@media (max-width: 800px) {
+				margin-top: 0px;
+				margin-bottom: 40px;
+			}
+		}
+	}
+	/* End About Us Area css
+	============================================================================================ */
+
+	/* Start Course Overview Area css
+	============================================================================================ */
+	.overview-area {
+		.nav-tabs {
+			border-bottom: 1px solid rgba(130, 139, 178, 0.3);
+			@media (max-width: 991px) {
+				margin-top: 0px;
+			}
+			.nav-link {
+				background: rgba(82, 101, 165, 0.3);
+				color: $text-color;
+				&:hover,
+				&.active {
+					background: $white;
+					color: $primary-color;
+				}
+			}
+		}
+		.tab-content {
+			h3 {
+				color: $white;
+			}
+			p {
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+	/* End Course Overview Area css
+	============================================================================================ */
+
+	/* Start Contact Area css
+	============================================================================================ */
+	.contact_area {
+	}
+	.mapBox {
+		height: 700px;
+	}
+	.contact_info {
+		@media (max-width: 991px) {
+			margin-top: 50px;
+		}
+		.info_item {
+			position: relative;
+			padding-left: 45px;
+			margin-bottom: 20px;
+			i {
+				position: absolute;
+				left: 0;
+				top: 0;
+				font-size: 20px;
+				line-height: 24px;
+				color: $white;
+				font-weight: 600;
+			}
+			h6 {
+				font-size: 16px;
+				color: $white;
+				font-weight: bold;
+				margin-bottom: 0px;
+				a {
+					color: $white;
+				}
+			}
+			p {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.contact_form {
+	}
+	/* End Contact Area css
+	============================================================================================ */
+	&.light,
+	&.color {
+		.notice-item h4,
+		.academic-item .academic-text h4 a,
+		.info-area .info-content h2,
+		.department-area h3,
+		.overview-area .nav-tabs .nav-link,
+		.overview-area .tab-content h3,
+		.news-details-area h1,
+		.news-details-area .meta .date span,
+		.news-details-area h3,
+		.contact_info .info_item i,
+		.contact_info .info_item h6,
+		.contact_info .info_item h6 a {
+			color: $primary-color;
+		}
+		.fact-area .white-box.single-summery {
+			box-shadow: 0px 10px 15px rgba(236, 208, 244, 0.3);
+		}
+		.info-area .info-content {
+			background: rgba($primary-color, 0.05);
+		}
+		.overview-area .nav-tabs .nav-link:hover,
+		.overview-area .nav-tabs .nav-link.active {
+			@extend .gradient-bg;
+			color: $white;
+		}
+	}
+}

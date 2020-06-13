@@ -1,0 +1,2241 @@
+/**************** extend css start ****************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:300,400,500,600,700,800|Roboto:300,400,500");
+/* line 7, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.btn_1, .btn_2:hover, .banner_part .banner_text .btn_1 {
+  background-image: -webkit-gradient(linear, right top, left top, from(#7c32ff), color-stop(50%, #c738d8), to(#7c32ff));
+  background-image: -webkit-linear-gradient(right, #7c32ff 0%, #c738d8 50%, #7c32ff 100%);
+  background-image: -o-linear-gradient(right, #7c32ff 0%, #c738d8 50%, #7c32ff 100%);
+  background-image: linear-gradient(to left, #7c32ff 0%, #c738d8 50%, #7c32ff 100%);
+}
+
+/* line 13, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.all_feature .single_feature:before, .our_speciality .single_feature:before {
+  background-image: -moz-linear-gradient(0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+  background-image: -webkit-linear-gradient(0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+  background-image: -ms-linear-gradient(0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+  box-shadow: 0px 30px 30px 0px rgba(108, 39, 255, 0.5);
+}
+
+/* line 26, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.video_section .video_section_img:after, .contact_us {
+  background-image: -webkit-linear-gradient(0deg, #7c32ff 0%, #c738d8 100%);
+  background-image: -ms-linear-gradient(0deg, #7c32ff 0%, #c738d8 100%);
+}
+
+/* line 52, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.feature_part .single_feature_part .single_feature_icon i, .video_section .video_section_img .video-play-button span, .all_feature .single_feature_part .single_feature_icon i, .our_speciality .single_feature_part .single_feature_icon i {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(0deg, #7c32ff 0%, #c738d8 100%);
+}
+
+/* line 57, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.all_feature .single_feature:hover .single_feature_icon i, .our_speciality .single_feature:hover .single_feature_icon i, .contact_us .section_tittle h5, .contact_us .section_tittle h2, .contact_us .section_tittle p {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+}
+
+/* line 62, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.contact_us .single_feature_part:hover i {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to top, #b937e0 0%, #7c32ff 100%);
+}
+
+/* line 68, ../../03 Codetheme project/school/Preview_Landing_html/sass/_extends.scss */
+.footer_section .footer_area_text .footer_btn {
+  background-image: linear-gradient(to top, #b937e0 0%, #7c32ff 50%, #b937e0 100%);
+}
+
+/**************** extend css start ****************/
+/**************** common css start ****************/
+/* line 4, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* line 11, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.message_submit_form:focus {
+  outline: none;
+}
+
+/* line 15, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+input:hover,
+input:focus {
+  outline: none !important;
+}
+
+/* line 20, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.gray_bg {
+  background-color: #f7f7f7;
+}
+
+/* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.section_padding {
+  padding: 150px 0px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_padding {
+    padding: 80px 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+/* line 44, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.single_padding_top {
+  padding-top: 150px !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 44, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 70px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 44, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 70px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 44, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 70px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 44, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 80px !important;
+  }
+}
+
+/* line 64, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.padding_top {
+  padding-top: 150px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 64, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_top {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 64, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 64, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 64, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+/* line 84, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.padding_bottom {
+  padding-bottom: 150px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 84, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 84, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 84, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 84, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+/* line 104, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 108, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 114, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #415094;
+  font-family: "Poppins", sans-serif;
+}
+
+/* line 124, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+p {
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.929;
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #828bb2;
+  font-weight: 300;
+}
+
+/* line 134, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+h2 {
+  font-size: 36px;
+  line-height: 28px;
+  color: #415094;
+  font-weight: 700;
+  line-height: 1.222;
+}
+
+@media (max-width: 576px) {
+  /* line 134, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  h2 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 134, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+/* line 154, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+h3 {
+  font-size: 24px;
+  line-height: 25px;
+}
+
+@media (max-width: 576px) {
+  /* line 154, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 164, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 169, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 173, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+a:focus,
+.button:focus,
+button:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* line 183, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.section_tittle {
+  margin-bottom: 74px;
+}
+
+@media (max-width: 576px) {
+  /* line 183, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 183, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 183, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 183, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle {
+    margin-bottom: 50px;
+  }
+}
+
+/* line 202, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.section_tittle h5 {
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  line-height: 11px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #7c32ff 0%, #c738d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* line 214, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.section_tittle h2 {
+  font-size: 36px;
+  color: #415094;
+  font-weight: 700;
+  position: relative;
+  margin: 30px 0 19px;
+  padding: 0 36px;
+  line-height: 1.25;
+}
+
+@media (max-width: 991px) {
+  /* line 214, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle h2 {
+    font-size: 25px;
+    margin: 15px 0 10px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 214, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 15px 0 10px;
+  }
+}
+
+/* line 237, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.section_tittle p {
+  color: #828bb2;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+  /* line 237, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle p {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 237, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle p {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 237, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle p {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 237, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .section_tittle p {
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+}
+
+/* line 261, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 267, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.mb_110 {
+  margin-bottom: 110px;
+}
+
+@media (max-width: 576px) {
+  /* line 267, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mb_110 {
+    margin-bottom: 220px;
+  }
+}
+
+/* line 276, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.mt_130 {
+  margin-top: 130px;
+}
+
+@media (max-width: 576px) {
+  /* line 276, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mt_130 {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 276, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mt_130 {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 276, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mt_130 {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 276, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mt_130 {
+    margin-top: 70px;
+  }
+}
+
+/* line 296, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.mb_130 {
+  margin-bottom: 130px;
+}
+
+@media (max-width: 576px) {
+  /* line 296, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mb_130 {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 296, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mb_130 {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 296, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mb_130 {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 296, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .mb_130 {
+    margin-bottom: 70px;
+  }
+}
+
+/* line 316, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.padding_less_40 {
+  margin-bottom: -50px;
+}
+
+/* line 320, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.z_index {
+  z-index: 9 !important;
+  position: relative;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3640px) {
+  /* line 326, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* line 343, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.coming_soon {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 346, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.coming_soon:after {
+  position: absolute;
+  content: "coming soon";
+  left: 0;
+  width: 100%;
+  color: #415094;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  bottom: 20px;
+}
+
+/* line 358, ../../03 Codetheme project/school/Preview_Landing_html/sass/_common.scss */
+.coming_soon:hover:after {
+  color: #fff;
+}
+
+/**************** common css end ****************/
+/* Main Button Area css
+============================================================================================ */
+/* line 3, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.submit_btn {
+  width: auto;
+  display: inline-block;
+  background: #fff;
+  padding: 0px 50px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 50px;
+  border-radius: 5px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid #edeff2;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 19, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.submit_btn:hover {
+  background: transparent;
+}
+
+/* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.btn_1 {
+  display: inline-block;
+  padding: 13.5px 45px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: capitalize;
+  background-size: 200% auto;
+  border: 1px solid transparent;
+  box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+/* line 38, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.btn_1:hover {
+  color: #fff !important;
+  background-position: right center;
+  box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+@media (max-width: 576px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .btn_1 {
+    padding: 10px 30px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .btn_1 {
+    padding: 10px 30px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 24, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .btn_1 {
+    padding: 10px 30px;
+    margin-top: 30px;
+  }
+}
+
+/* line 61, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.btn_2 {
+  border-color: #828bb2;
+  display: inline-block;
+  padding: 13px 39px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #828bb2;
+  color: #415094;
+  font-size: 14px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: capitalize;
+  background-size: 200% auto;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* line 77, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.btn_2:hover {
+  color: #fff !important;
+  background-position: right center;
+  border: 1px solid transparent;
+  box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+@media (max-width: 576px) {
+  /* line 61, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .btn_2 {
+    padding: 14px 30px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 61, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .btn_2 {
+    padding: 14px 30px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 61, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .btn_2 {
+    padding: 14px 30px;
+    margin-top: 30px;
+  }
+}
+
+/* line 100, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.btn_4 {
+  background-color: #ff663b;
+  padding: 3.5px 21px;
+  background: #ff663b;
+  text-transform: capitalize;
+  display: inline-block;
+  border: 2px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+}
+
+/* line 109, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.btn_4:hover {
+  background: rgba(255, 102, 59, 0.8);
+  color: #fff;
+}
+
+/*=================== custom button rule start ====================*/
+/* line 117, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 54px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #edeff2;
+  text-transform: uppercase;
+  background-color: #ff663b;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+  /* line 117, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+  .button {
+    font-size: 13px;
+    padding: 9px 24px;
+  }
+}
+
+/* line 136, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button:hover {
+  color: #fff;
+}
+
+/* line 141, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button-link {
+  letter-spacing: 0;
+  color: #3b1d82;
+  border: 0;
+  padding: 0;
+}
+
+/* line 147, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button-link:hover {
+  background: transparent;
+  color: #3b1d82;
+}
+
+/* line 153, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button-header {
+  color: #fff;
+  border-color: #edeff2;
+}
+
+/* line 157, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button-header:hover {
+  background: #b8024c;
+  color: #fff;
+}
+
+/* line 163, ../../03 Codetheme project/school/Preview_Landing_html/sass/_button.scss */
+.button-contactForm {
+  color: #fff;
+  border-color: #edeff2;
+  padding: 12px 25px;
+}
+
+/* End Main Button Area css
+============================================================================================ */
+/**************menu part start*****************/
+/* line 3, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .navbar-brand {
+  padding: 0rem !important;
+}
+
+/* line 6, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .navbar {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  /* line 6, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .navbar {
+    padding: 20px 0;
+  }
+}
+
+/* line 12, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .navbar-toggler {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 15, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .navbar-toggler:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 200% auto;
+}
+
+/* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .main-menu-item {
+  text-align: right;
+  justify-content: right;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .main-menu-item {
+    padding-left: 25px;
+  }
+}
+
+/* line 34, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .main-menu-item ul li .nav-link {
+  color: #415094 !important;
+  font-size: 12px;
+  padding: 36px 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  line-height: 10px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 34, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .main-menu-item ul li .nav-link {
+    padding: 35px 16px;
+  }
+}
+
+/* line 45, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .main-menu-item ul li .nav-link:hover {
+  color: #7c32ff !important;
+}
+
+/* line 55, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+.main_menu .btn_1 {
+  color: #fff;
+  font-size: 14px;
+  padding: 8.5px 21px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+@media (max-width: 991px) {
+  /* line 55, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .btn_1 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 71, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  /* line 79, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+  /* line 82, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .navbar-collapse {
+    z-index: 9999 !important;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center !important;
+  }
+  /* line 92, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .main-menu-item {
+    text-align: left !important;
+    box-shadow: 0px 16px 20px 0px rgba(108, 39, 255, 0.3);
+  }
+  /* line 95, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .main-menu-item .nav-item {
+    padding: 10px 15px !important;
+  }
+  /* line 98, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .main_menu .main-menu-item .nav-item a {
+    padding: 5px 15px !important;
+  }
+  /* line 104, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .dropdown .dropdown-menu {
+    transform: scale(1, 0);
+    display: none;
+    margin-top: 10px;
+  }
+  /* line 110, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .dropdown:hover .dropdown-menu {
+    transform: scale(1);
+    display: block;
+    color: #ff663b;
+  }
+  /* line 116, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .dropdown .dropdown-item:hover {
+    color: #ff663b !important;
+  }
+  /* line 120, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../img/menu.svg);
+  }
+  /* line 123, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .menu_fixed {
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease-in;
+    top: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  /* line 135, ../../03 Codetheme project/school/Preview_Landing_html/sass/_menu.scss */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999 !important;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease-in;
+  }
+}
+
+/**************** banner part css start ****************/
+/* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part {
+  height: 880px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/banner_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part {
+    height: 650px;
+    background-image: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part {
+    height: 550px;
+    background-image: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part {
+    height: 500px;
+    background-image: none;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part {
+    height: 750px;
+  }
+}
+
+/* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text {
+  display: table;
+  width: 100%;
+  height: 880px;
+}
+
+/* line 31, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text .banner_text_iner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 31, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .banner_text_iner {
+    vertical-align: bottom;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 31, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .banner_text_iner {
+    vertical-align: bottom;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text {
+    height: 650px;
+    text-align: center;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text {
+    height: 550px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text {
+    height: 500px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text {
+    height: 750px;
+  }
+}
+
+/* line 63, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #556172;
+  margin-bottom: 14px;
+}
+
+/* line 70, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+@media (max-width: 991px) {
+  /* line 70, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 70, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}
+
+/* line 86, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text h1 span {
+  color: #ff663b;
+}
+
+/* line 91, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+}
+
+/* line 98, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text .btn_1 {
+  box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+  margin-top: 53px;
+  padding: 13.5px 25px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  /* line 98, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 98, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_1 {
+    margin-top: 20px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 98, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_1 {
+    margin-top: 20px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 98, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_1 {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 10px 25px;
+  }
+}
+
+/* line 124, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text .btn_1 i {
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+/* line 130, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text .btn_2 {
+  margin-top: 50px;
+  padding: 13.5px 25px;
+  margin-left: 16px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  color: #415094;
+}
+
+@media (max-width: 576px) {
+  /* line 130, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 130, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_2 {
+    margin-top: 20px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 130, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_2 {
+    margin-top: 20px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 130, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_2 {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 10px 25px;
+  }
+}
+
+/* line 157, ../../03 Codetheme project/school/Preview_Landing_html/sass/_banner.scss */
+.banner_part .banner_text .btn_2 i {
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+/**************** hero part css end ****************/
+/**************** about css start ****************/
+/* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+.about_part {
+  position: relative;
+  z-index: 1;
+  padding: 70px 0px 140px;
+  background-image: url(../img/about_overlay.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 33% 73%;
+}
+
+@media (max-width: 576px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part {
+    padding: 70px 0px 70px;
+    background-position: top;
+    background-size: 100% 43%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part {
+    padding: 70px 0px 70px;
+    background-position: top left;
+    background-size: 90% 56%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part {
+    padding: 70px 0px 70px;
+    background-position: left;
+    background-size: 48% 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part {
+    padding: 0px 0px 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 29, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 29, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 29, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text {
+    margin-top: 50px;
+  }
+}
+
+/* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+.about_part .about_text h4 {
+  margin-bottom: 32px;
+  color: #ff7e5f;
+  font-size: 22px;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  /* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h4 {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h4 {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h4 {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h4 {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+}
+
+/* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+.about_part .about_text h2 {
+  line-height: 1.25;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 576px) {
+  /* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h2 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h2 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+  .about_part .about_text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 84, ../../03 Codetheme project/school/Preview_Landing_html/sass/_about.scss */
+.about_part .about_text p {
+  margin-top: 13px;
+}
+
+/**************** service_part css start ****************/
+@media (max-width: 991px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part {
+    padding: 70px 0 42px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part {
+    padding: 80px 0 52px;
+  }
+}
+
+/* line 10, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_text h2 {
+  font-size: 42px;
+  line-height: 1.222;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  /* line 10, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 10, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 10, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_text h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 10, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 35px;
+  }
+}
+
+/* line 37, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_text p {
+  line-height: 1.8;
+}
+
+/* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_part {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media (max-width: 991px) {
+  /* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part {
+    padding: 0px 0px 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 42, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part {
+    margin-bottom: 25px;
+  }
+}
+
+/* line 53, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_part .single_feature_icon {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  width: 90px;
+  height: 68px;
+  text-align: center;
+  background-image: url("../img/feature_icon_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  display: inline-block;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  line-height: 82px;
+}
+
+@media (max-width: 576px) {
+  /* line 53, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part .single_feature_icon {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 53, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part .single_feature_icon {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 53, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part .single_feature_icon {
+    margin-bottom: 35px;
+  }
+}
+
+/* line 81, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_part .single_feature_icon i {
+  color: #0c2e60;
+  font-size: 30px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* line 88, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_part h4 {
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 37px;
+}
+
+@media (max-width: 991px) {
+  /* line 88, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 88, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+  .feature_part .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 101, ../../03 Codetheme project/school/Preview_Landing_html/sass/_feature_part.scss */
+.feature_part .single_feature_part p {
+  line-height: 1.8;
+  font-size: 16px;
+  padding-right: 4px;
+}
+
+/**************** service_part css start ****************/
+/* line 3, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+.video_section .video_section_img {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 6, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+.video_section .video_section_img:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  opacity: .85;
+  border-radius: 10px;
+}
+
+/* line 18, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+.video_section .video_section_img .video-play-button {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 39%;
+  text-align: center;
+  line-height: 84px;
+  font-size: 36px;
+  border-radius: 50%;
+  padding-left: 5px;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  /* line 18, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_img .video-play-button {
+    top: 30%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 18, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_img .video-play-button {
+    top: 37%;
+  }
+}
+
+/* line 45, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+.video_section .video_section_text {
+  padding-left: 65px;
+}
+
+@media (max-width: 991px) {
+  /* line 45, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_text {
+    padding-left: 0px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 45, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_text {
+    padding-left: 0px;
+  }
+}
+
+/* line 54, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+.video_section .video_section_text h2 {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  /* line 54, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_text h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 54, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+.video_section .video_section_text p {
+  margin-top: 32px;
+}
+
+@media (max-width: 991px) {
+  /* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_text p {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 66, ../../03 Codetheme project/school/Preview_Landing_html/sass/_video_section_text.scss */
+  .video_section .video_section_text p {
+    margin-top: 15px;
+  }
+}
+
+/**************** all feature css start ****************/
+/* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0 120px;
+}
+
+@media (max-width: 991px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature {
+    padding: 70px 0 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature {
+    padding: 80px 0 60px;
+  }
+}
+
+/* line 12, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  background-color: #e4d9f9;
+  z-index: -1;
+}
+
+/* line 22, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 35px 42px;
+  border-radius: 10px;
+  box-shadow: 2.088px 14.854px 40px 0px rgba(111, 54, 255, 0.2);
+  margin-bottom: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  /* line 22, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature {
+    padding: 35px 15px 32px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 39, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* line 52, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature:hover {
+  margin-top: -15px;
+}
+
+/* line 54, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature:hover:before {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+/* line 58, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature:hover h4 {
+  color: #fff;
+}
+
+/* line 61, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature:hover p {
+  color: #fff;
+}
+
+/* line 65, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature:hover .single_feature_icon:before {
+  opacity: .5;
+}
+
+/* line 76, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_text h2 {
+  font-size: 42px;
+  line-height: 1.222;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  /* line 76, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 76, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 76, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_text h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 76, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 35px;
+  }
+}
+
+/* line 103, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_text p {
+  line-height: 1.8;
+}
+
+/* line 108, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_part {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* line 110, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_part .single_feature_icon {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  width: 90px;
+  height: 68px;
+  text-align: center;
+  background-position: top;
+  background-size: contain;
+  display: inline-block;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  line-height: 82px;
+}
+
+/* line 123, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_part .single_feature_icon:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("../img/feature_icon_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+@media (max-width: 576px) {
+  /* line 110, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_part .single_feature_icon {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 110, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_part .single_feature_icon {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 110, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_part .single_feature_icon {
+    margin-bottom: 35px;
+  }
+}
+
+/* line 149, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_part .single_feature_icon i {
+  color: #0c2e60;
+  font-size: 30px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* line 156, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_part h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  /* line 156, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 156, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 156, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+  .all_feature .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 177, ../../03 Codetheme project/school/Preview_Landing_html/sass/_all_feature.scss */
+.all_feature .single_feature_part p {
+  line-height: 1.8;
+  font-size: 16px;
+  padding-right: 4px;
+}
+
+/**************** all feature css start ****************/
+/* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0 120px;
+}
+
+@media (max-width: 991px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality {
+    padding: 70px 0 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality {
+    padding: 80px 0 60px;
+  }
+}
+
+/* line 15, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 10px 42px;
+  border-radius: 10px;
+  box-shadow: 0.696px 4.951px 20px 0px rgba(111, 54, 255, 0.2);
+  margin-bottom: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  /* line 15, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 32, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* line 46, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature:hover {
+  box-shadow: 0px 20px 20px 0px rgba(108, 39, 255, 0.3);
+  margin-top: -15px;
+}
+
+/* line 50, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature:hover:before {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+/* line 55, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature:hover h4 {
+  color: #fff;
+}
+
+/* line 59, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature:hover p {
+  color: #fff;
+}
+
+/* line 64, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature:hover .single_feature_icon:before {
+  opacity: .5;
+}
+
+/* line 77, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature_text h2 {
+  font-size: 42px;
+  line-height: 1.222;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  /* line 77, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 77, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 77, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_text h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 77, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_text h2 {
+    margin-top: 0px;
+    font-size: 35px;
+  }
+}
+
+/* line 104, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature_text p {
+  line-height: 1.8;
+}
+
+/* line 109, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature_part {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* line 113, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature_part .single_feature_icon i {
+  color: #0c2e60;
+  font-size: 30px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
+}
+
+/* line 125, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature_part h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  /* line 125, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 125, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 125, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+  .our_speciality .single_feature_part h4 {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 145, ../../03 Codetheme project/school/Preview_Landing_html/sass/_our_speciality.scss */
+.our_speciality .single_feature_part p {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/**************** all feature css start ****************/
+/* line 9, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+.contact_us .single_feature_part {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 100px 20px 87px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  /* line 9, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+  .contact_us .single_feature_part {
+    padding: 50px 10px 40px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 22, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+.contact_us .single_feature_part i {
+  font-size: 60px;
+  margin-bottom: 37px;
+  display: inline-block;
+  color: #828bb2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  /* line 22, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+  .contact_us .single_feature_part i {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 35, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+.contact_us .single_feature_part p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #415094;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 35, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+  .contact_us .single_feature_part p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 35, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+  .contact_us .single_feature_part p {
+    font-size: 18px;
+  }
+}
+
+/* line 46, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+.contact_us .single_feature_part:hover {
+  box-shadow: 0px 20px 50px 0px rgba(124, 50, 255, 0.3);
+  margin-top: -15px;
+}
+
+/* line 49, ../../03 Codetheme project/school/Preview_Landing_html/sass/_contact_us.scss */
+.contact_us .single_feature_part:hover i {
+  text-shadow: 0px 10px 5px rgba(130, 50, 252, 0.3);
+}
+
+/************* footer section start******************/
+/* line 2, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section {
+  background-image: url(../img/footer_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: -40px;
+}
+
+/* line 14, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text {
+  padding: 170px 0 101px;
+}
+
+@media (max-width: 991px) {
+  /* line 14, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text {
+    padding: 90px 0 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 14, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text {
+    padding: 120px 0 50px;
+  }
+}
+
+/* line 23, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text img {
+  margin-bottom: 34px;
+}
+
+/* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text p {
+  padding: 0 66px;
+}
+
+@media (max-width: 991px) {
+  /* line 27, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 37, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 45, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 50, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text h2 {
+    font-size: 25px;
+  }
+}
+
+/* line 54, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text .footer_btn {
+  text-align: left;
+  box-shadow: 0px 20px 25px 0px rgba(130, 50, 252, 0.3);
+  display: inline-block;
+  border-radius: 50px;
+  padding: 18px 67px 18px 91px;
+  position: relative;
+  margin-top: 44px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background-size: auto 200%;
+}
+
+@media (max-width: 991px) {
+  /* line 54, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+  .footer_section .footer_area_text .footer_btn {
+    padding: 18px 30px 18px 80px;
+  }
+}
+
+/* line 72, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text .footer_btn:hover {
+  background-position: bottom center;
+  box-shadow: 0px 20px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+/* line 76, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text .footer_btn i {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  margin-bottom: 0px;
+}
+
+/* line 92, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text .footer_btn p {
+  padding: 0;
+  font-size: 11px;
+  color: #d29dff;
+  text-transform: uppercase;
+}
+
+/* line 99, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .footer_area_text .footer_btn h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* line 107, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .copyright_text {
+  padding: 20px 0px;
+}
+
+/* line 109, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .copyright_text img {
+  width: 20px;
+  margin-right: 3px;
+}
+
+/* line 113, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .copyright_text p {
+  color: #828bb2;
+}
+
+/* line 116, ../../03 Codetheme project/school/Preview_Landing_html/sass/_footer_section.scss */
+.footer_section .copyright_text a {
+  color: #415094;
+  font-size: 15px;
+} 
+.support-link{
+  color: #415094;
+} 
+/*# sourceMappingURL=style.css.map */
